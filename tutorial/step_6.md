@@ -66,7 +66,7 @@ API, and was re-used in our factory.
 
 #### Digging Deeper 🧐
 
-Resources come with [Lifecycle Hooks](https://www.graphiti.dev/guides/concepts/resources#persistence-lifecycle-hooks), similar to ActiveRecord [Callbacks](https://guides.rubyonrails.org/active_record_callbacks.html).
+Resources come with [Lifecycle Hooks](https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#persistence-lifecycle-hooks), similar to ActiveRecord [Callbacks](https://guides.rubyonrails.org/active_record_callbacks.html).
 
 Those callbacks have gotten a bad reputation. This is because your Model
 can be - is supposed to be - used in a variety of contexts across your
@@ -83,7 +83,7 @@ can still use Service Objects if you'd like; Graphiti callbacks simply wire them
 <div class="clearfix">
   <h2 id="next">
     <a href="/tutorial/step_7">
-      NEXT - 
+      NEXT -
       <small>Step 7: Many to Many</small>
       &raquo;
     </a>

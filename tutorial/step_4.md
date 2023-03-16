@@ -128,14 +128,14 @@ without Graphiti first.
 We could have changed the above to ActiveRecord scopes like
 `.order_by_title(title)`, making the wiring code even simpler. Consider
 doing this when the logic is reusable or particlar complex, but be aware
-of the tradeoffs of [double-testing units](https://www.graphiti.dev/guides/concepts/testing#double-testing-units).
+of the tradeoffs of [double-testing units](https://timkrins.com/graphiti-api.github.io/guides/concepts/testing#double-testing-units).
 
 </div>
 
 <div class="clearfix">
   <h2 id="next">
     <a href="/tutorial/step_5">
-      NEXT - 
+      NEXT -
       <small>Step 5: Has One</small>
       &raquo;
     </a>

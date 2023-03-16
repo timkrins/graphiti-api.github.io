@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="https://www.graphiti.dev/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://www.graphiti.dev/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://www.graphiti.dev/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="https://www.graphiti.dev/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="https://www.graphiti.dev/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
-  <link rel="shortcut icon" href="https://www.graphiti.dev/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
+  <link rel="shortcut icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#F86DA7">
-  <meta name="msapplication-config" content="https://www.graphiti.dev/assets/favicons/browserconfig.xml">
+  <meta name="msapplication-config" content="https://timkrins.com/graphiti-api.github.io/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#F86DA7">
 
   <title>Graphiti</title>
   <meta name="description" content="Stylish Graph APIs">
 
-  <link rel="stylesheet" href="https://www.graphiti.dev/assets/main.css?ref=wh4t3v45">
+  <link rel="stylesheet" href="https://timkrins.com/graphiti-api.github.io/assets/main.css?ref=wh4t3v45">
   <link rel="alternate" type="application/rss+xml" title="Graphiti" href="/feed.xml">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,7 +38,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  
+
 </head>
 
 
@@ -48,23 +48,23 @@
         <header class="navbar navbar-inverse normal" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="https://www.graphiti.dev" class="navbar-brand">
+      <a href="https://timkrins.com/graphiti-api.github.io" class="navbar-brand">
         <img alt="logo" src="/assets/img/logo.png">
       </a>
     </div>
     <nav class="" role="navigation">
       <ul class="nav navbar-nav nav-links">
         <li>
-          <a class="quickstart nav-link" href="https://www.graphiti.dev/quickstart">Quickstart</a>
+          <a class="quickstart nav-link" href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
         </li>
         <li>
-          <a class="guides nav-link" href="https://www.graphiti.dev/guides">Guides</a>
+          <a class="guides nav-link" href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
         </li>
         <li>
-          <a class="tutorial nav-link" href="https://www.graphiti.dev/tutorial">Tutorial</a>
+          <a class="tutorial nav-link" href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
         </li>
         <li>
-          <a class="spraypaint nav-link" href="https://www.graphiti.dev/js">Spraypaint</a>
+          <a class="spraypaint nav-link" href="https://timkrins.com/graphiti-api.github.io/js">Spraypaint</a>
         </li>
       </ul>
       <ul class="nav gh navbar-nav navbar-right visible-lg visible-md">
@@ -112,7 +112,7 @@ from the opposite angle - figure out the API contract, and you get separate serv
   <img width="100%" src="https://labs.sogeti.com/wp-content/uploads/2016/11/microservices.gif" />
 </p>
 
-  <p>Resources have a defined query contract, and connect together with <a href="https://www.graphiti.dev/guides/concepts/links">Links</a>. Put two and two together, and you’ll see a Resource doesn’t need to be local to a single application. We can have Remote Resources as well:</p>
+  <p>Resources have a defined query contract, and connect together with <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/links">Links</a>. Put two and two together, and you’ll see a Resource doesn’t need to be local to a single application. We can have Remote Resources as well:</p>
 
   <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">has_many</span> <span class="ss">:comments</span><span class="p">,</span>
   <span class="ss">remote: </span><span class="s1">'http://blog-api.com/api/v1/comments'</span></code></pre></figure>
@@ -164,7 +164,7 @@ remote resources.</p>
   <span class="n">has_many</span> <span class="ss">:comments</span>
 <span class="k">end</span></code></pre></figure>
 
-  <p>This would generate a <a href="https://www.graphiti.dev/guides/concepts/links">Link</a> for
+  <p>This would generate a <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/links">Link</a> for
 lazy-loading comments:</p>
 
   <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">{</span>
@@ -178,7 +178,7 @@ eager-loading</strong>:</p>
 <span class="n">posts</span> <span class="o">=</span> <span class="no">PostResource</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">data</span>
 <span class="no">CommentResource</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span><span class="ss">filter: </span><span class="p">{</span> <span class="ss">post_id: </span><span class="mi">123</span> <span class="p">})</span></code></pre></figure>
 
-  <p>OK, and we also know Resources support <a href="https://www.graphiti.dev/guides/concepts/backends-and-models">any backend</a>, and we can build an <a href="https://www.graphiti.dev/cookbooks/without-activerecord#adapters">Adapter</a> if our backend supports common operations like filtering, sorting, and pagination.</p>
+  <p>OK, and we also know Resources support <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/backends-and-models">any backend</a>, and we can build an <a href="https://timkrins.com/graphiti-api.github.io/cookbooks/without-activerecord#adapters">Adapter</a> if our backend supports common operations like filtering, sorting, and pagination.</p>
 
   <p>So, that means we can build an Adapter that makes an HTTP request to another Graphiti Resource that lives in a separate API. That adapter is built into Graphiti and comes out-of-the-box: <code class="highlighter-rouge">Graphiti::Adapters::GraphitiAPI</code></p>
 
@@ -449,13 +449,13 @@ know how to associate these children to their parents.</p>
         <h3>Overview</h3>
         <ul>
           <li>
-            <a href="https://www.graphiti.dev/quickstart">Quickstart</a>
+            <a href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
           </li>
           <li>
-            <a href="https://www.graphiti.dev/tutorial">Tutorial</a>
+            <a href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
           </li>
           <li>
-            <a href="https://www.graphiti.dev/guides">Guides</a>
+            <a href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
           </li>
         </ul>
       </div>

@@ -122,7 +122,7 @@ filter :employee_id, :integer
 {% endhighlight %}
 
 If you visit `/api/v1/employees`, you'll see a number of HTTP
-[Links](https://www.graphiti.dev/guides/concepts/links)
+[Links](https://timkrins.com/graphiti-api.github.io/guides/concepts/links)
 that allow lazy-loading positions. Or, if you visit
 `/api/v1/employees?include=positions`, you'll load the employees and
 positions in a single request. We'll dig a bit deeper into this logic
@@ -246,7 +246,7 @@ suite.
 Why did we need the `employee_id` filter above? To explain that, let's dive deeper into the logic connecting Resources.
 
 If you hit `/api/v1/employees`, you'll see a number of
-[Links](https://www.graphiti.dev/guides/concepts/links) in the
+[Links](https://timkrins.com/graphiti-api.github.io/guides/concepts/links) in the
 response. These are useful for lazy-loading, but the same logic
 applies to eager loading. Let's take a look at a Link to see how these
 Resources connect together:
@@ -315,7 +315,7 @@ out the [Resource Relationships Guide]({{site.github.url}}/guides/concepts/resou
 <div class="clearfix">
   <h2 id="next">
     <a href="/tutorial/step_3">
-      NEXT - 
+      NEXT -
       <small>Step 3: Belongs To</small>
       &raquo;
     </a>

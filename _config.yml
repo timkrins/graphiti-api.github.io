@@ -31,7 +31,7 @@ exclude:
   - Gemfile.lock
 
 github:
-  url: 'https://www.graphiti.dev'
+  url: 'https://timkrins.com/graphiti-api.github.io'
 #  url: 'http://localhost:4000'
 defaults:
   - scope:
