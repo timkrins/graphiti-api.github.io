@@ -17,7 +17,7 @@ Scratch]({{site.github.url}}/guides/getting-started/installation).
 We'll use the `-m` option to install from a template, which will add a few gems and apply some setup boilerplate. Accept all the default options.
 
 {% highlight bash %}
-$ rails new employee_directory --api -m https://timkrins.com/graphiti-api.github.io/template
+$ rails new employee_directory --api -m {{ site.github.url }}/template
 $ cd employee_directory
 {% endhighlight %}
 

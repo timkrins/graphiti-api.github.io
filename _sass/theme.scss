@@ -166,7 +166,7 @@ a.header {
   position: fixed;
   width: 100%;
   /*background: url("https://www.toptal.com/designers/subtlepatterns/patterns/connectwork.png");*/
-  background: url("/graphiti-api.github.io/fancy-cushion.png");
+  background: url("{{ site.github.url }}/fancy-cushion.png");
   /*background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark-honeycomb.png");*/
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 15px -2px black;

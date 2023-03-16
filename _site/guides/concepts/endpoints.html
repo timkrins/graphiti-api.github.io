@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
-  <link rel="shortcut icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.github.url }}/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.github.url }}/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.github.url }}/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.github.url }}/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="{{ site.github.url }}/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#F86DA7">
-  <meta name="msapplication-config" content="https://timkrins.com/graphiti-api.github.io/assets/favicons/browserconfig.xml">
+  <meta name="msapplication-config" content="{{ site.github.url }}/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#F86DA7">
 
   <title>Graphiti</title>
   <meta name="description" content="Stylish Graph APIs">
 
-  <link rel="stylesheet" href="https://timkrins.com/graphiti-api.github.io/assets/main.css?ref=wh4t3v45">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/main.css?ref=wh4t3v45">
   <link rel="alternate" type="application/rss+xml" title="Graphiti" href="/feed.xml">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,23 +48,23 @@
         <header class="navbar navbar-inverse normal" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="https://timkrins.com/graphiti-api.github.io" class="navbar-brand">
+      <a href="{{ site.github.url }}" class="navbar-brand">
         <img alt="logo" src="/graphiti-api.github.io/logo.png">
       </a>
     </div>
     <nav class="" role="navigation">
       <ul class="nav navbar-nav nav-links">
         <li>
-          <a class="quickstart nav-link" href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
+          <a class="quickstart nav-link" href="{{ site.github.url }}/quickstart">Quickstart</a>
         </li>
         <li>
-          <a class="guides nav-link" href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
+          <a class="guides nav-link" href="{{ site.github.url }}/guides">Guides</a>
         </li>
         <li>
-          <a class="tutorial nav-link" href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
+          <a class="tutorial nav-link" href="{{ site.github.url }}/tutorial">Tutorial</a>
         </li>
         <li>
-          <a class="spraypaint nav-link" href="https://timkrins.com/graphiti-api.github.io/js">Spraypaint</a>
+          <a class="spraypaint nav-link" href="{{ site.github.url }}/js">Spraypaint</a>
         </li>
       </ul>
       <ul class="nav gh navbar-nav navbar-right visible-lg visible-md">
@@ -116,7 +116,7 @@
   </a>
 
   <p><strong>Endpoints</strong> expose and customize
-<a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources">Resources</a>.</p>
+<a href="{{ site.github.url }}/guides/concepts/resources">Resources</a>.</p>
 
   <p>It’s important to remember that Resources themselves can operate
 completely independently of a request or response:</p>
@@ -152,7 +152,7 @@ Rails, an Endpoint is the combination of a Route and Controller.</p>
   </a>
 
   <p>Often, you won’t need to customize Endpoints - especially if you’re
-using our <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#generators">Rails Resource
+using our <a href="{{ site.github.url }}/guides/concepts/resources#generators">Rails Resource
 generator</a>. Endpoint logic mostly
 concerns:</p>
 
@@ -201,7 +201,7 @@ our application generator):</p>
 <span class="k">end</span></code></pre></figure>
 
   <p>This gives us <a href="#sideload-allowlist">#sideload_allowlist</a> and sets the
-<a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#context">context</a>.</p>
+<a href="{{ site.github.url }}/guides/concepts/resources#context">context</a>.</p>
 
 <a class="anchor" id="customizing-resources" />
   <a class="header" href="#customizing-resources">
@@ -218,7 +218,7 @@ our application generator):</p>
   </a>
 
   <p>One common use case for endpoints is customizing the Resource
-<a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#base-scope">base scope</a>. This causes a new
+<a href="{{ site.github.url }}/guides/concepts/resources#base-scope">base scope</a>. This causes a new
 “starting point” for query building.</p>
 
   <p>Consider the endpoints <code class="highlighter-rouge">/posts</code> (basic CRUD) and <code class="highlighter-rouge">/top_posts</code>. Though
@@ -253,7 +253,7 @@ those positions in a single request. But is it really valid to <em>also</em> pul
 all the hardware, as well as all the historical data on the cost of that hardware,
 in a single request? Allowing the entire graph to be pulled down in a single request can cause excessive load on our
 servers (and this is probably a better fit for lazy-loading via
-<a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/links">Links</a>).</p>
+<a href="{{ site.github.url }}/guides/concepts/links">Links</a>).</p>
 
   <p>Let’s instead say that if we’re entering the graph at <code class="highlighter-rouge">/employees</code>, the
 furthest we can go is Department:</p>
@@ -331,7 +331,7 @@ sideloading (and filtering) Positions as well. Use custom endpoints or
     </h2>
   </a>
 
-  <p>If you have custom Endpoint logic, we suggest testing using an <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/testing#api-tests">API
+  <p>If you have custom Endpoint logic, we suggest testing using an <a href="{{ site.github.url }}/guides/concepts/testing#api-tests">API
 Test</a>.</p>
 </div>
 
@@ -345,13 +345,13 @@ Test</a>.</p>
         <h3>Overview</h3>
         <ul>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
+            <a href="{{ site.github.url }}/quickstart">Quickstart</a>
           </li>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
+            <a href="{{ site.github.url }}/tutorial">Tutorial</a>
           </li>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
+            <a href="{{ site.github.url }}/guides">Guides</a>
           </li>
         </ul>
       </div>

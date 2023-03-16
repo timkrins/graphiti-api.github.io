@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
-  <link rel="shortcut icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.github.url }}/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.github.url }}/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.github.url }}/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.github.url }}/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="{{ site.github.url }}/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#F86DA7">
-  <meta name="msapplication-config" content="https://timkrins.com/graphiti-api.github.io/assets/favicons/browserconfig.xml">
+  <meta name="msapplication-config" content="{{ site.github.url }}/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#F86DA7">
 
   <title>Graphiti</title>
   <meta name="description" content="Stylish Graph APIs">
 
-  <link rel="stylesheet" href="https://timkrins.com/graphiti-api.github.io/assets/main.css?ref=wh4t3v45">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/main.css?ref=wh4t3v45">
   <link rel="alternate" type="application/rss+xml" title="Graphiti" href="/feed.xml">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,23 +48,23 @@
         <header class="navbar navbar-inverse normal" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="https://timkrins.com/graphiti-api.github.io" class="navbar-brand">
+      <a href="{{ site.github.url }}" class="navbar-brand">
         <img alt="logo" src="/graphiti-api.github.io/logo.png">
       </a>
     </div>
     <nav class="" role="navigation">
       <ul class="nav navbar-nav nav-links">
         <li>
-          <a class="quickstart nav-link" href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
+          <a class="quickstart nav-link" href="{{ site.github.url }}/quickstart">Quickstart</a>
         </li>
         <li>
-          <a class="guides nav-link" href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
+          <a class="guides nav-link" href="{{ site.github.url }}/guides">Guides</a>
         </li>
         <li>
-          <a class="tutorial nav-link" href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
+          <a class="tutorial nav-link" href="{{ site.github.url }}/tutorial">Tutorial</a>
         </li>
         <li>
-          <a class="spraypaint nav-link" href="https://timkrins.com/graphiti-api.github.io/js">Spraypaint</a>
+          <a class="spraypaint nav-link" href="{{ site.github.url }}/js">Spraypaint</a>
         </li>
       </ul>
       <ul class="nav gh navbar-nav navbar-right visible-lg visible-md">
@@ -112,13 +112,13 @@
   </a>
 
   <p>Graphiti comes with a debugger that shows the queries executed for a
-given request. Remember that Resources <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#query-interface">have a query interface</a> independent of a request or response. And Resources connect similar to ActiveRecord’s <code class="highlighter-rouge">includes</code>:</p>
+given request. Remember that Resources <a href="{{ site.github.url }}/guides/concepts/resources#query-interface">have a query interface</a> independent of a request or response. And Resources connect similar to ActiveRecord’s <code class="highlighter-rouge">includes</code>:</p>
 
   <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">employees</span> <span class="o">=</span> <span class="no">EmployeeResource</span><span class="p">.</span><span class="nf">all</span>
 <span class="no">PositionResource</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span><span class="ss">filter: </span><span class="p">{</span> <span class="ss">employee_id: </span><span class="n">employees</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:id</span><span class="p">)</span> <span class="p">})</span></code></pre></figure>
 
   <blockquote>
-    <p><em>Remember, this is all <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#customizing-relationships">customizable</a></em>.</p>
+    <p><em>Remember, this is all <a href="{{ site.github.url }}/guides/concepts/resources#customizing-relationships">customizable</a></em>.</p>
   </blockquote>
 
   <p>That means we can log the requests made by individual Resources:</p>
@@ -171,7 +171,7 @@ JSON response. To enable this:</p>
 
   <p><br /></p>
 
-  <p>If there’s an error, and you’ve <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/error-handling#displaying-raw-errors">enabled raw errors</a>, you’ll also see the query that caused the error in the JSON response:</p>
+  <p>If there’s an error, and you’ve <a href="{{ site.github.url }}/guides/concepts/error-handling#displaying-raw-errors">enabled raw errors</a>, you’ll also see the query that caused the error in the JSON response:</p>
 
   <p><br /></p>
 
@@ -353,13 +353,13 @@ your Models and Backends.</p>
         <h3>Overview</h3>
         <ul>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
+            <a href="{{ site.github.url }}/quickstart">Quickstart</a>
           </li>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
+            <a href="{{ site.github.url }}/tutorial">Tutorial</a>
           </li>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
+            <a href="{{ site.github.url }}/guides">Guides</a>
           </li>
         </ul>
       </div>

@@ -19,7 +19,7 @@ sensible defaults to get started quickly.
 Let's start with a classic Rails blog. We'll use a [template](http://guides.rubyonrails.org/rails_application_templates.html) to handle some of the boilerplate. Just run this command and accept all the defaults for now:
 
 {% highlight bash %}
-$ rails new blog --api -m https://timkrins.com/graphiti-api.github.io/template
+$ rails new blog --api -m {{ site.github.url }}/template
 {% endhighlight %}
 
 Feel free to run `git diff` if you're interested in the
@@ -78,7 +78,7 @@ $ bundle exec rails db:seed
 Now load `http://localhost:3000/api/v1/posts`. You should have 3 `Post`s in
 your database!
 
-{% comment %}![3_posts]({{site.github.url}}/graphiti-api.github.io/3_posts_json.png){% endcomment %}
+{% comment %}![3_posts]({{ site.github.url }}/3_posts_json.png){% endcomment %}
 
 <hr />
 
@@ -168,7 +168,7 @@ end
   * There are a number of built-in stats, you can also add your own.
   * This is rendered in the `meta` section of the response:
 
-    ![meta_total_count]({{site.github.url}}/graphiti-api.github.io/meta_total_count.png)
+    ![meta_total_count]({{ site.github.url }}/meta_total_count.png)
   * [View Documentation]({{site.github.url}}/guides/concepts/resources#statistics)
 
 * **Error Handling**:
@@ -184,7 +184,7 @@ end
 
   * The default payload you'd see in production:
 
-    ![error_payload]({{site.github.url}}/graphiti-api.github.io/error_payload.png)
+    ![error_payload]({{ site.github.url }}/error_payload.png)
 
   * Different errors can be customized with different response codes,
   JSON, and side-effects. See more in the [Error Handling

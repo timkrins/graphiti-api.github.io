@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
-  <link rel="shortcut icon" href="https://timkrins.com/graphiti-api.github.io/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.github.url }}/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.github.url }}/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.github.url }}/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.github.url }}/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="{{ site.github.url }}/assets/favicons/safari-pinned-tab.svg" color="#F86DA7">
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#F86DA7">
-  <meta name="msapplication-config" content="https://timkrins.com/graphiti-api.github.io/assets/favicons/browserconfig.xml">
+  <meta name="msapplication-config" content="{{ site.github.url }}/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#F86DA7">
 
   <title>Graphiti</title>
   <meta name="description" content="Stylish Graph APIs">
 
-  <link rel="stylesheet" href="https://timkrins.com/graphiti-api.github.io/assets/main.css?ref=wh4t3v45">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/main.css?ref=wh4t3v45">
   <link rel="alternate" type="application/rss+xml" title="Graphiti" href="/feed.xml">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,23 +48,23 @@
         <header class="navbar navbar-inverse normal" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="https://timkrins.com/graphiti-api.github.io" class="navbar-brand">
+      <a href="{{ site.github.url }}" class="navbar-brand">
         <img alt="logo" src="/graphiti-api.github.io/logo.png">
       </a>
     </div>
     <nav class="" role="navigation">
       <ul class="nav navbar-nav nav-links">
         <li>
-          <a class="quickstart nav-link" href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
+          <a class="quickstart nav-link" href="{{ site.github.url }}/quickstart">Quickstart</a>
         </li>
         <li>
-          <a class="guides nav-link" href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
+          <a class="guides nav-link" href="{{ site.github.url }}/guides">Guides</a>
         </li>
         <li>
-          <a class="tutorial nav-link" href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
+          <a class="tutorial nav-link" href="{{ site.github.url }}/tutorial">Tutorial</a>
         </li>
         <li>
-          <a class="spraypaint nav-link" href="https://timkrins.com/graphiti-api.github.io/js">Spraypaint</a>
+          <a class="spraypaint nav-link" href="{{ site.github.url }}/js">Spraypaint</a>
         </li>
       </ul>
       <ul class="nav gh navbar-nav navbar-right visible-lg visible-md">
@@ -161,7 +161,7 @@ Resource:</p>
 <span class="no">PostResource</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">data</span> <span class="c1"># =&gt; [#&lt;Post&gt;, #&lt;Post&gt;, ...]</span></code></pre></figure>
 
   <p>Now we just need to integrate with Rails endpoints (to give us things
-like <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/resources#context">#context</a>):</p>
+like <a href="{{ site.github.url }}/guides/concepts/resources#context">#context</a>):</p>
 
   <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># app/controllers/application_controller.rb</span>
 <span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
@@ -250,7 +250,7 @@ create it!</p>
     </h3>
   </a>
 
-  <p>To add our <a href="https://timkrins.com/graphiti-api.github.io/guides/concepts/testing">Integration Tests</a>:</p>
+  <p>To add our <a href="{{ site.github.url }}/guides/concepts/testing">Integration Tests</a>:</p>
 
   <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Gemfile</span>
 <span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
@@ -339,13 +339,13 @@ check out the <a href="https://github.com/graphiti-api/plain_ruby_example">Plain
         <h3>Overview</h3>
         <ul>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/quickstart">Quickstart</a>
+            <a href="{{ site.github.url }}/quickstart">Quickstart</a>
           </li>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/tutorial">Tutorial</a>
+            <a href="{{ site.github.url }}/tutorial">Tutorial</a>
           </li>
           <li>
-            <a href="https://timkrins.com/graphiti-api.github.io/guides">Guides</a>
+            <a href="{{ site.github.url }}/guides">Guides</a>
           </li>
         </ul>
       </div>
