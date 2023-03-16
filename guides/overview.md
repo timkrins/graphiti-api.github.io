@@ -5,7 +5,7 @@ layout: page
 ## 2 Lifecycle of a Graphiti Request
 
 <p align="center">
-  <img width="100%" src="/graphiti-api.github.io/lifecycle.gif">
+  <img width="100%" src="{{ site.github.url }}/assets/img/lifecycle.gif">
 </p>
 
 <br />
@@ -15,7 +15,7 @@ The key concept here is a **Resource**. [Resources]({{site.github.url}}/guides/c
 <br />
 
 <p align="center">
-  <img width="100%" src="/graphiti-api.github.io/resource.gif">
+  <img width="100%" src="{{ site.github.url }}/assets/img/resource.gif">
 </p>
 
 Each Resource is comprised of **Attributes**. Each Attribute corresponds to behavior for:
@@ -28,7 +28,7 @@ Each Resource is comprised of **Attributes**. Each Attribute corresponds to beha
 Each Attribute has a **Type**, which will be coerced and checked at runtime.
 
 <p align="center">
-  <img width="100%" src="/graphiti-api.github.io/backend.gif" />
+  <img width="100%" src="{{ site.github.url }}/assets/img/backend.gif" />
 </p>
 
 A Resource does not mean "a database table", though the two have a lot in common and often match. A Resource is a generic interface wrapping a **Backend**. That Backend could be a relational database, a No-SQL database, or even a third-party service call. And you can use whichever client or ORM you'd like for a given Backend (`ActiveRecord`, `Sequel`, `Mongoid`, `Net::HTTP`, etc).
@@ -41,7 +41,7 @@ business logic. In other words you might **query** using `elasticsearch-ruby`, b
 Finally, these Models are *serialized* when we actually render a response. You'll still use `Rails`, `Sinatra`, or whatever-else to manage routing, HTTP codes, etc.
 
 <p align="center">
-  <img width="100%" src="/graphiti-api.github.io/rest3.gif">
+  <img width="100%" src="{{ site.github.url }}/assets/img/rest3.gif">
 </p>
 
 Critically, **each Resource can connect to other Resources**. This can occur through ***Sideloading*** ("fetch the employee, her positions, and the departments for those positions in a single request"), ***Sideposting*** ("*save* the employee and her positions/departments in a single request), and ***Links*** ("here's a URL to lazy-load positions in a separate request"). Because `Resource`s connect to each other, this is why we often refer to a Resource as a "node in the graph".
