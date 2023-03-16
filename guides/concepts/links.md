@@ -68,7 +68,7 @@ Comments in a single request, or lazy-load that data in a separate
 request, the same data should always be returned.
 
 <p align="center">
-  <img width="100%" src="/assets/img/rest2.gif">
+  <img width="100%" src="/graphiti-api.github.io/rest2.gif">
 </p>
 
 [Links](http://jsonapi.org/format/#document-links) solve this problem. When we fetch the Post, the `top_comments`

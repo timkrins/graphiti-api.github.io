@@ -59,7 +59,7 @@ Resources
 {% include h.html tag="h2" text="1 Overview" a="overview" %}
 
 <p align="center">
-  <img width="100%" src="/assets/img/rest3.gif" />
+  <img width="100%" src="/graphiti-api.github.io/rest3.gif" />
 </p>
 
 The same way a `Model` is an abstraction around a database table, a

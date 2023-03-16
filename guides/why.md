@@ -3,7 +3,7 @@ layout: page
 ---
 
 <p align="center">
-  <img style="margin-top:-30px" width="100%" src="/assets/img/why.png" />
+  <img style="margin-top:-30px" width="100%" src="/graphiti-api.github.io/why.png" />
 </p>
 
 Why Graphiti
@@ -36,7 +36,7 @@ HTTP!), instead of replacing it altogether. We can have our cake and eat it too.
 {% include h.html tag="h2" text="REST" a="rest" %}
 
 <p align="center">
-  <img width="100%" src="/assets/img/rest-graffiti.jpg" />
+  <img width="100%" src="/graphiti-api.github.io/rest-graffiti.jpg" />
 </p>
 <div class="spacer"></div>
 
@@ -79,7 +79,7 @@ In other words, **this is REST**:
 
 <div class="spacer"></div>
 <p align="center">
-  <img width="80%" src="/assets/img/rest1.gif" />
+  <img width="80%" src="/graphiti-api.github.io/rest1.gif" />
 </p>
 <div class="spacer"></div>
 
@@ -95,7 +95,7 @@ clients.
 
 <div class="spacer"></div>
 <p align="center">
-  <img width="80%" src="/assets/img/rest2.gif" />
+  <img width="80%" src="/graphiti-api.github.io/rest2.gif" />
 </p>
 <div class="spacer"></div>
 
@@ -165,7 +165,7 @@ Oh, and we dropped support for lazy-loading along the way.
 {% include h.html tag="h2" text="Conventions" a="conventions" %}
 
 <p align="center">
-  <img src="/assets/img/conformity.png">
+  <img src="/graphiti-api.github.io/conformity.png">
 </p>
 
 The benefit of REST over RPC is conventions. Conventions cause increased
@@ -288,7 +288,7 @@ multisort.
 ## Rethinking REST
 
 <p align="center">
-  <img width="100%" src="/assets/img/rethink-rest-graffiti.jpg" />
+  <img width="100%" src="/graphiti-api.github.io/rethink-rest-graffiti.jpg" />
 </p>
 <div class="spacer"></div>
 
@@ -301,7 +301,7 @@ eager-loading**?
 
 <div class="spacer"></div>
 <p align="center">
-  <img width="80%" src="/assets/img/rest3.gif" />
+  <img width="80%" src="/graphiti-api.github.io/rest3.gif" />
 </p>
 <div class="spacer"></div>
 
@@ -593,7 +593,7 @@ no need for a wholesale revamp. In fact, we don't need to change much at
 all.
 
 <p align="center">
-  <img width="100%" src="/assets/img/persist.jpg" />
+  <img width="100%" src="/graphiti-api.github.io/persist.jpg" />
 </p>
 
 Just as we can **query** multiple Resources at once, we can also
@@ -841,7 +841,7 @@ to something simple: a mirror, a trick deck, a quick hand.
 An object, moving back and forth.
 
 <p align="center">
-  <img width="80%" src="/assets/img/rest1.gif" />
+  <img width="80%" src="/graphiti-api.github.io/rest1.gif" />
 </p>
 
 Simple concepts can often be the most powerful, and I will never get
@@ -887,5 +887,5 @@ Unless you like XML. Screw XML.
 <br />
 
 <p align="center">
-  <img width="100%" src="/assets/img/love-graffiti.jpg">
+  <img width="100%" src="/graphiti-api.github.io/love-graffiti.jpg">
 </p>

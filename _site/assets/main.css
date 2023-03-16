@@ -12190,7 +12190,7 @@ a.header:hover {
   position: fixed;
   width: 100%;
   /*background: url("https://www.toptal.com/designers/subtlepatterns/patterns/connectwork.png");*/
-  background: url("/assets/img/fancy-cushion.png");
+  background: url("/graphiti-api.github.io/fancy-cushion.png");
   /*background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark-honeycomb.png");*/
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 15px -2px black;
@@ -12257,7 +12257,7 @@ body {
   line-height: 1.7;
   color: #4d4d4d; }
   body.layout-home {
-    background-image: url("/assets/img/home-bg.jpg");
+    background-image: url("/graphiti-api.github.io/home-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -12379,9 +12379,9 @@ h4 {
   padding-top: 0; }
 
 #cover-image.prod-bg {
-  background-image: url("/jsonapi_suite/assets/img/sunrise.png") !important; }
+  background-image: url("/jsonapi_suite/graphiti-api.github.io/sunrise.png") !important; }
 #cover-image.dev-bg {
-  background-image: url("/assets/img/sunrise.png") !important; }
+  background-image: url("/graphiti-api.github.io/sunrise.png") !important; }
 
 .solution img {
   margin-left: 30px !important;
