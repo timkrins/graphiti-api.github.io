@@ -165,7 +165,9 @@ a.header {
 .navbar.normal {
   position: fixed;
   width: 100%;
-  background: url("/graphiti-api.github.io/assets/img/assets/img/fancy-cushion.png");
+  /*background: url("https://www.toptal.com/designers/subtlepatterns/patterns/connectwork.png");*/
+  background: url("/graphiti-api.github.io/assets/img/fancy-cushion.png");
+  /*background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark-honeycomb.png");*/
   border-bottom: 1px solid black;
   box-shadow: 1px 1px 15px -2px black;
   /*background: black;*/
@@ -320,6 +322,7 @@ body {
         @media (min-width: 768px) {
           padding-top: 150px;
         }
+        background: url("https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/dark-honeycomb.png");
         /*background: #5c666f;*/
         border: 1px solid black;
         color: lighten(#ddd, 5%);
@@ -403,6 +406,7 @@ h4 {
 }
 
 .main-footer {
+  background: url("https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/dark-honeycomb.png");
   margin-top: 0;
   bottom: 0;
 }
@@ -437,7 +441,7 @@ h4 {
 // hack bc I can't get jekyll variables in sass atm
 #cover-image {
   &.prod-bg {
-    background-image: url("/jsonapi_suite/graphiti-api.github.io/sunrise.png") !important;
+    background-image: url("/graphiti-api.github.io/assets/img/sunrise.png") !important;
   }
 
   &.dev-bg {
